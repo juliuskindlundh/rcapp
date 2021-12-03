@@ -14,16 +14,13 @@ function ContentView(){
     useEffect(()=>{
         postService.getAll(setData);
         postService.getUserPosts(token,username,setMyPosts);
-
     },[newFetch])
 
     const dataIsLoaded = () =>{
         if(data !== undefined){
-            console.log(data);
             return true;
         }
         else{
-            console.log(data);
             return false;
         }
     }

@@ -20,7 +20,6 @@ const postService = {
             method:"get"
         }).then(res=>res.json()).then(data=>{
             setData(data);
-            console.log(data);
         })
     },
     getUserPosts:(token,username,setMyPosts)=>{
@@ -34,7 +33,6 @@ const postService = {
             if(res.status===200){
                 res.json().then(data=>{
                     setMyPosts(data);
-                    console.log(data);
                 })
             }
         })
@@ -49,7 +47,6 @@ const postService = {
             },           
         }).then(res=>{
             setNewFetch(!newFetch);
-            console.log(res);
         })
     }
 

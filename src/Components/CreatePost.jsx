@@ -32,8 +32,8 @@ function CreatePost(){
 
     return(
         <div className="createPost">
-            <input type="text" on onChange={handleHeadlineChange}></input><br></br>
-            <textarea type="text" onChange={handleTextChange}></textarea><br></br>
+            <input type="text" onChange={handleHeadlineChange} value={headline}></input><br></br>
+            <textarea type="text" onChange={handleTextChange} value={text}></textarea><br></br>
             <button onClick={handlePost}>Post</button>
         </div>
     )

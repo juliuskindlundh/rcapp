@@ -6,11 +6,9 @@ import { ContextProvider } from './Context/DataContext';
 function App() {
 return (
     <ContextProvider>
-      <div className="App">
         <Header/>
         <CreatePost/>
         <ContentView/>
-      </div>
     </ContextProvider>
   );
 }
